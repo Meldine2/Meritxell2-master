@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F2F2F2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:background="#6EC6FF"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/menuButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/ic_menu"
+            android:contentDescription="Menu"
+            android:layout_marginEnd="16dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="50dp">
+
+            <ImageView
+                android:layout_width="143dp"
+                android:layout_height="40dp"
+                android:contentDescription="Logo"
+                android:src="@drawable/ic_logo" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/welcomeMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome!"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/latestNews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Latest News"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+                android:textColor="#000000" />
+
+            <ImageView
+                android:id="@+id/latestNewsImage1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/forever_image"
+                android:contentDescription="Latest News Image"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/titleTextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forever really exists!"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/dateTextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="February 4, 2019"
+                android:textSize="14sp"
+                android:textColor="#808080"
+                android:layout_marginBottom="20dp" />
+
+            <ImageView
+                android:id="@+id/latestNewsImage2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/bittersweet_image"
+                android:contentDescription="Latest News Image"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/titleTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adoption at Meritxell are bittersweet"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/dateTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="June 23, 2017"
+                android:textSize="14sp"
+                android:textColor="#808080" />
+
+            <ImageView
+                android:id="@+id/latestNewsImage2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_merit"
+                android:contentDescription="Latest News Image"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/titleTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sunday afternoons "
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/dateTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="July 16, 2017"
+                android:textSize="14sp"
+                android:textColor="#808080" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#E8E8E8"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_home" />
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/adopt_button_footer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_adopt" />
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adopt"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/legal_button_footer" android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"    android:focusable="true"    android:foreground="?attr/selectableItemBackgroundBorderless"> <FrameLayout
+            android:id="@+id/fabChat"
+            android:layout_width="40dp"  android:layout_height="40dp" android:background="@drawable/fab_background"
+            android:contentDescription="Chat with Ally">
+
+            <ImageView
+                android:layout_width="28dp" android:layout_height="28dp" android:layout_gravity="center"
+                android:src="@drawable/adoptionbotimg"
+                android:scaleType="centerCrop"
+                android:background="@drawable/circle_background" />
+        </FrameLayout>
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AI Legal Assist" android:textColor="#000000"
+                android:textSize="10sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/donation_button_footer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_donate" />
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Donate"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/inbox_button_footer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_inbox" />
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inbox"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

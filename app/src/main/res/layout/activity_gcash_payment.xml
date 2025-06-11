@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#FFF"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_back"
+            android:contentDescription="Back"
+            android:layout_marginEnd="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GCash Payment"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:src="@drawable/gcash_qr"
+        android:contentDescription="GCash QR Code"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload your GCash receipt:"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <ImageView
+        android:id="@+id/ivReceiptPreview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:background="#EEE"
+        android:contentDescription="Receipt Preview"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_upload_placeholder" /> <Button
+    android:id="@+id/btnChooseReceipt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Choose Receipt" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnSubmitReceipt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Receipt"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#6EC6FF"
+        android:textColor="#FFF" />
+</LinearLayout>

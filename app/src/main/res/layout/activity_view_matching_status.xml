@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F0F7"
+    tools:context=".ViewMatchingStatusActivity">
+
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal"
+        android:background="#6EC6FF"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_back"
+            android:contentDescription="Back"
+            android:layout_marginEnd="16dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_logo"
+                android:contentDescription="Logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MERITXELL"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/header_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Matching Status"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#2C3E50"
+                android:gravity="center"
+                android:layout_marginBottom="24dp"/>
+
+            <LinearLayout
+                android:id="@+id/current_request_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@drawable/card_background"
+                android:layout_marginBottom="24dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your Latest Matching Request"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#2C3E50"
+                    android:gravity="center"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:id="@+id/text_view_status_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status:"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="4dp"/>
+                <TextView
+                    android:id="@+id/text_view_request_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Loading status..."
+                    android:textSize="16sp"
+                    android:textColor="#555555"
+                    android:background="@drawable/edit_text_background"
+                    android:padding="8dp"
+                    android:layout_marginBottom="12dp"/>
+
+                <TextView
+                    android:id="@+id/text_view_pref_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Submitted Preferences:"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="4dp"/>
+                <TextView
+                    android:id="@+id/text_view_submitted_preferences"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Loading preferences..."
+                    android:textSize="16sp"
+                    android:textColor="#555555"
+                    android:background="@drawable/edit_text_background"
+                    android:padding="8dp"
+                    android:layout_marginBottom="12dp"/>
+
+                <TextView
+                    android:id="@+id/text_view_match_details_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Matched Child Details:"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="4dp"
+                    android:visibility="gone"/>
+                <TextView
+                    android:id="@+id/text_view_matched_child_details_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="No child matched yet."
+                    android:textSize="16sp"
+                    android:textColor="#555555"
+                    android:background="@drawable/edit_text_background"
+                    android:padding="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/button_accept_match"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Accept Match"
+                    android:backgroundTint="#4CAF50"
+                    android:textColor="@android:color/white"
+                    android:padding="12dp"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/button_decline_match"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Decline Match"
+                    android:backgroundTint="#F44336"
+                    android:textColor="@android:color/white"
+                    android:padding="12dp"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/button_cancel_request"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel Request"
+                    android:backgroundTint="#FF9800"  android:textColor="@android:color/white"
+                    android:padding="12dp"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:visibility="gone" />
+
+
+                <Button
+                    android:id="@+id/button_schedule_appointment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Schedule Appointment"
+                    android:backgroundTint="#6EC6FF"
+                    android:textColor="@android:color/white"
+                    android:padding="12dp"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/button_request_new_match"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit New Preferences"
+                    android:backgroundTint="#2C3E50"
+                    android:textColor="@android:color/white"
+                    android:padding="12dp"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_horizontal"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,44 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <!-- Static Menu Items -->
+    <item
+        android:id="@+id/ic_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/ic_appointments"
+        android:icon="@drawable/ic_appointments"
+        android:title="Appointments / Scheduling" />
+
+    <item
+        android:id="@+id/ic_history"
+        android:icon="@drawable/ic_history"
+        android:title="History" />
+
+    <item
+        android:id="@+id/ic_matching"
+        android:icon="@drawable/ic_matching"
+        android:title="Matching" />
+
+    <!-- Admin-only Menu Items -->
+    <item
+        android:id="@+id/ic_child_status"
+        android:icon="@drawable/ic_child_status"
+        android:title="Child Status Information"
+        android:visible="false" /> <!-- Initially hidden, only visible for admin -->
+
+    <item
+        android:id="@+id/ic_admin_history"
+        android:icon="@drawable/ic_admin_dashboard"
+        android:title="Admin History Dashboard"
+        android:visible="false" /> <!-- Initially hidden, only visible for admin -->
+
+    <item
+        android:id="@+id/ic_logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Log Out" />
+
+</menu>

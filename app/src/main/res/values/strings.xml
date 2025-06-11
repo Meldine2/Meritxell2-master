@@ -1,0 +1,378 @@
+<resources>
+
+    <string-array name="appointment_type_options">
+        <item>Select Appointment</item>
+        <item>Matching</item>
+        <item>Initial Consultation</item>
+        <item>Follow Up</item>
+        <item>Document Submission</item>
+    </string-array>
+    <string name="app_name">meritxell</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <!-- ORIGINAL TIME OPTIONS (BEFORE TESTING): 8:00 A.M., 9:00 A.M., 10:00 A.M., 11:00 A.M., 12:00 P.M., 1:00 P.M., 2:00 P.M., 3:00 P.M., 4:00 P.M., 5:00 P.M. -->
+    <string-array name="time_options">
+        <item>Select Time</item>
+        <!-- 12:00 AM - 12:59 AM (5-minute intervals for testing) -->
+        <item>12:00 AM</item>
+        <item>12:05 AM</item>
+        <item>12:10 AM</item>
+        <item>12:15 AM</item>
+        <item>12:20 AM</item>
+        <item>12:25 AM</item>
+        <item>12:30 AM</item>
+        <item>12:35 AM</item>
+        <item>12:40 AM</item>
+        <item>12:45 AM</item>
+        <item>12:50 AM</item>
+        <item>12:55 AM</item>
+        <!-- 1:00 AM - 1:59 AM -->
+        <item>1:00 AM</item>
+        <item>1:05 AM</item>
+        <item>1:10 AM</item>
+        <item>1:15 AM</item>
+        <item>1:20 AM</item>
+        <item>1:25 AM</item>
+        <item>1:30 AM</item>
+        <item>1:35 AM</item>
+        <item>1:40 AM</item>
+        <item>1:45 AM</item>
+        <item>1:50 AM</item>
+        <item>1:55 AM</item>
+        <!-- 2:00 AM - 2:59 AM -->
+        <item>2:00 AM</item>
+        <item>2:05 AM</item>
+        <item>2:10 AM</item>
+        <item>2:15 AM</item>
+        <item>2:20 AM</item>
+        <item>2:25 AM</item>
+        <item>2:30 AM</item>
+        <item>2:35 AM</item>
+        <item>2:40 AM</item>
+        <item>2:45 AM</item>
+        <item>2:50 AM</item>
+        <item>2:55 AM</item>
+        <!-- 3:00 AM - 3:59 AM -->
+        <item>3:00 AM</item>
+        <item>3:05 AM</item>
+        <item>3:10 AM</item>
+        <item>3:15 AM</item>
+        <item>3:20 AM</item>
+        <item>3:25 AM</item>
+        <item>3:30 AM</item>
+        <item>3:35 AM</item>
+        <item>3:40 AM</item>
+        <item>3:45 AM</item>
+        <item>3:50 AM</item>
+        <item>3:55 AM</item>
+        <!-- 4:00 AM - 4:59 AM -->
+        <item>4:00 AM</item>
+        <item>4:05 AM</item>
+        <item>4:10 AM</item>
+        <item>4:15 AM</item>
+        <item>4:20 AM</item>
+        <item>4:25 AM</item>
+        <item>4:30 AM</item>
+        <item>4:35 AM</item>
+        <item>4:40 AM</item>
+        <item>4:45 AM</item>
+        <item>4:50 AM</item>
+        <item>4:55 AM</item>
+        <!-- 5:00 AM - 5:59 AM -->
+        <item>5:00 AM</item>
+        <item>5:05 AM</item>
+        <item>5:10 AM</item>
+        <item>5:15 AM</item>
+        <item>5:20 AM</item>
+        <item>5:25 AM</item>
+        <item>5:30 AM</item>
+        <item>5:35 AM</item>
+        <item>5:40 AM</item>
+        <item>5:45 AM</item>
+        <item>5:50 AM</item>
+        <item>5:55 AM</item>
+        <!-- 6:00 AM - 6:59 AM -->
+        <item>6:00 AM</item>
+        <item>6:05 AM</item>
+        <item>6:10 AM</item>
+        <item>6:15 AM</item>
+        <item>6:20 AM</item>
+        <item>6:25 AM</item>
+        <item>6:30 AM</item>
+        <item>6:35 AM</item>
+        <item>6:40 AM</item>
+        <item>6:45 AM</item>
+        <item>6:50 AM</item>
+        <item>6:55 AM</item>
+        <!-- 7:00 AM - 7:59 AM -->
+        <item>7:00 AM</item>
+        <item>7:05 AM</item>
+        <item>7:10 AM</item>
+        <item>7:15 AM</item>
+        <item>7:20 AM</item>
+        <item>7:25 AM</item>
+        <item>7:30 AM</item>
+        <item>7:35 AM</item>
+        <item>7:40 AM</item>
+        <item>7:45 AM</item>
+        <item>7:50 AM</item>
+        <item>7:55 AM</item>
+        <!-- 8:00 AM - 8:59 AM (ORIGINAL BUSINESS HOUR) -->
+        <item>8:00 AM</item>
+        <item>8:05 AM</item>
+        <item>8:10 AM</item>
+        <item>8:15 AM</item>
+        <item>8:20 AM</item>
+        <item>8:25 AM</item>
+        <item>8:30 AM</item>
+        <item>8:35 AM</item>
+        <item>8:40 AM</item>
+        <item>8:45 AM</item>
+        <item>8:50 AM</item>
+        <item>8:55 AM</item>
+        <!-- 9:00 AM - 9:59 AM (ORIGINAL BUSINESS HOUR) -->
+        <item>9:00 AM</item>
+        <item>9:05 AM</item>
+        <item>9:10 AM</item>
+        <item>9:15 AM</item>
+        <item>9:20 AM</item>
+        <item>9:25 AM</item>
+        <item>9:30 AM</item>
+        <item>9:35 AM</item>
+        <item>9:40 AM</item>
+        <item>9:45 AM</item>
+        <item>9:50 AM</item>
+        <item>9:55 AM</item>
+        <!-- 10:00 AM - 10:59 AM (ORIGINAL BUSINESS HOUR) -->
+        <item>10:00 AM</item>
+        <item>10:05 AM</item>
+        <item>10:10 AM</item>
+        <item>10:15 AM</item>
+        <item>10:20 AM</item>
+        <item>10:25 AM</item>
+        <item>10:30 AM</item>
+        <item>10:35 AM</item>
+        <item>10:40 AM</item>
+        <item>10:45 AM</item>
+        <item>10:50 AM</item>
+        <item>10:55 AM</item>
+        <!-- 11:00 AM - 11:59 AM (ORIGINAL BUSINESS HOUR) -->
+        <item>11:00 AM</item>
+        <item>11:05 AM</item>
+        <item>11:10 AM</item>
+        <item>11:15 AM</item>
+        <item>11:20 AM</item>
+        <item>11:25 AM</item>
+        <item>11:30 AM</item>
+        <item>11:35 AM</item>
+        <item>11:40 AM</item>
+        <item>11:45 AM</item>
+        <item>11:50 AM</item>
+        <item>11:55 AM</item>
+        <!-- 12:00 PM - 12:59 PM (ORIGINAL BUSINESS HOUR) -->
+        <item>12:00 PM</item>
+        <item>12:05 PM</item>
+        <item>12:10 PM</item>
+        <item>12:15 PM</item>
+        <item>12:20 PM</item>
+        <item>12:25 PM</item>
+        <item>12:30 PM</item>
+        <item>12:35 PM</item>
+        <item>12:40 PM</item>
+        <item>12:45 PM</item>
+        <item>12:50 PM</item>
+        <item>12:55 PM</item>
+        <!-- 1:00 PM - 1:59 PM (ORIGINAL BUSINESS HOUR) -->
+        <item>1:00 PM</item>
+        <item>1:05 PM</item>
+        <item>1:10 PM</item>
+        <item>1:15 PM</item>
+        <item>1:20 PM</item>
+        <item>1:25 PM</item>
+        <item>1:30 PM</item>
+        <item>1:35 PM</item>
+        <item>1:40 PM</item>
+        <item>1:45 PM</item>
+        <item>1:50 PM</item>
+        <item>1:55 PM</item>
+        <!-- 2:00 PM - 2:59 PM (ORIGINAL BUSINESS HOUR) -->
+        <item>2:00 PM</item>
+        <item>2:05 PM</item>
+        <item>2:10 PM</item>
+        <item>2:15 PM</item>
+        <item>2:20 PM</item>
+        <item>2:25 PM</item>
+        <item>2:30 PM</item>
+        <item>2:35 PM</item>
+        <item>2:40 PM</item>
+        <item>2:45 PM</item>
+        <item>2:50 PM</item>
+        <item>2:55 PM</item>
+        <!-- 3:00 PM - 3:59 PM (ORIGINAL BUSINESS HOUR) -->
+        <item>3:00 PM</item>
+        <item>3:05 PM</item>
+        <item>3:10 PM</item>
+        <item>3:15 PM</item>
+        <item>3:20 PM</item>
+        <item>3:25 PM</item>
+        <item>3:30 PM</item>
+        <item>3:35 PM</item>
+        <item>3:40 PM</item>
+        <item>3:45 PM</item>
+        <item>3:50 PM</item>
+        <item>3:55 PM</item>
+        <!-- 4:00 PM - 4:59 PM (ORIGINAL BUSINESS HOUR) -->
+        <item>4:00 PM</item>
+        <item>4:05 PM</item>
+        <item>4:10 PM</item>
+        <item>4:15 PM</item>
+        <item>4:20 PM</item>
+        <item>4:25 PM</item>
+        <item>4:30 PM</item>
+        <item>4:35 PM</item>
+        <item>4:40 PM</item>
+        <item>4:45 PM</item>
+        <item>4:50 PM</item>
+        <item>4:55 PM</item>
+        <!-- 5:00 PM - 5:59 PM (ORIGINAL BUSINESS HOUR) -->
+        <item>5:00 PM</item>
+        <item>5:05 PM</item>
+        <item>5:10 PM</item>
+        <item>5:15 PM</item>
+        <item>5:20 PM</item>
+        <item>5:25 PM</item>
+        <item>5:30 PM</item>
+        <item>5:35 PM</item>
+        <item>5:40 PM</item>
+        <item>5:45 PM</item>
+        <item>5:50 PM</item>
+        <item>5:55 PM</item>
+        <!-- 6:00 PM - 6:59 PM -->
+        <item>6:00 PM</item>
+        <item>6:05 PM</item>
+        <item>6:10 PM</item>
+        <item>6:15 PM</item>
+        <item>6:20 PM</item>
+        <item>6:25 PM</item>
+        <item>6:30 PM</item>
+        <item>6:35 PM</item>
+        <item>6:40 PM</item>
+        <item>6:45 PM</item>
+        <item>6:50 PM</item>
+        <item>6:55 PM</item>
+        <!-- 7:00 PM - 7:59 PM -->
+        <item>7:00 PM</item>
+        <item>7:05 PM</item>
+        <item>7:10 PM</item>
+        <item>7:15 PM</item>
+        <item>7:20 PM</item>
+        <item>7:25 PM</item>
+        <item>7:30 PM</item>
+        <item>7:35 PM</item>
+        <item>7:40 PM</item>
+        <item>7:45 PM</item>
+        <item>7:50 PM</item>
+        <item>7:55 PM</item>
+        <!-- 8:00 PM - 8:59 PM -->
+        <item>8:00 PM</item>
+        <item>8:05 PM</item>
+        <item>8:10 PM</item>
+        <item>8:15 PM</item>
+        <item>8:20 PM</item>
+        <item>8:25 PM</item>
+        <item>8:30 PM</item>
+        <item>8:35 PM</item>
+        <item>8:40 PM</item>
+        <item>8:45 PM</item>
+        <item>8:50 PM</item>
+        <item>8:55 PM</item>
+        <!-- 9:00 PM - 9:59 PM -->
+        <item>9:00 PM</item>
+        <item>9:05 PM</item>
+        <item>9:10 PM</item>
+        <item>9:15 PM</item>
+        <item>9:20 PM</item>
+        <item>9:25 PM</item>
+        <item>9:30 PM</item>
+        <item>9:35 PM</item>
+        <item>9:40 PM</item>
+        <item>9:45 PM</item>
+        <item>9:50 PM</item>
+        <item>9:55 PM</item>
+        <!-- 10:00 PM - 10:59 PM -->
+        <item>10:00 PM</item>
+        <item>10:05 PM</item>
+        <item>10:10 PM</item>
+        <item>10:15 PM</item>
+        <item>10:20 PM</item>
+        <item>10:25 PM</item>
+        <item>10:30 PM</item>
+        <item>10:35 PM</item>
+        <item>10:40 PM</item>
+        <item>10:45 PM</item>
+        <item>10:50 PM</item>
+        <item>10:55 PM</item>
+        <!-- 11:00 PM - 11:59 PM -->
+        <item>11:00 PM</item>
+        <item>11:05 PM</item>
+        <item>11:10 PM</item>
+        <item>11:15 PM</item>
+        <item>11:20 PM</item>
+        <item>11:25 PM</item>
+        <item>11:30 PM</item>
+        <item>11:35 PM</item>
+        <item>11:40 PM</item>
+        <item>11:45 PM</item>
+        <item>11:50 PM</item>
+        <item>11:55 PM</item>
+    </string-array>
+    <string name="app_description">AI Legal assistance for adoption in the Philippines</string>
+    <string name="hint_message">Ask Ally about adoption in the Philippines...</string>
+    <string name="button_send">Send</string>
+    <string name="welcome_message">👋 Hello! I\'m Ally, your AI Legal Assistant. I\'m here to help you with questions about adoption in the Philippines.\n\nYou can ask me in English or Filipino. How can I assist you today?</string>
+    <string name="error_network">Please check your internet connection and try again.</string>
+    <string name="error_general">Sorry, I encountered an error. Please try again.</string>
+    <string name="fallback_message">Sorry, I didn\'t get that. Could you please rephrase your question about adoption in the Philippines?</string>
+    <string-array name="gender_options">
+        <item>Select Gender</item>
+        <item>Any</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="skin_color_options">
+        <item>Select Skin Color</item> <item>Any</item>
+        <item>Light</item>
+        <item>Medium</item>
+        <item>Dark</item>
+    </string-array>
+
+    <string-array name="characteristics_options">
+        <item>Select Characteristics</item>
+        <item>Any</item>
+        <item>Playful</item>
+        <item>Calm</item>
+        <item>Energetic</item>
+        <item>Creative</item>
+    </string-array>
+
+    <string-array name="preferred_size_options">
+        <item>Select Size</item>
+        <item>Any</item>
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+
+    <string-array name="preferred_age_options">
+        <item>Select Age</item>
+        <item>Any</item>
+        <item>Infant (0-2)</item>
+        <item>Toddler (3-4)</item>
+        <item>Child (5-10)</item>
+        <item>Pre-teen (11-12)</item>
+    </string-array>
+
+    <string name="matching_terms_and_conditions">This matching system processes requests on a first-come, first-served basis. Users are encouraged to submit their preferences as early as possible. Once a match is proposed or accepted, no further submissions can be made until the current match is concluded or declined. All information provided will be kept confidential and used solely for the purpose of finding suitable matches.</string>
+
+</resources>

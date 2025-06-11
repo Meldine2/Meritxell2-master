@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFDF6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:text="Create an Account"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Last Name -->
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Name:" />
+
+        <EditText
+            android:id="@+id/lastName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:drawable/edit_text"
+            android:inputType="textPersonName" />
+
+        <!-- First Name -->
+        <TextView android:text="First Name:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/firstName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@android:drawable/edit_text"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Middle Name -->
+        <TextView android:text="Middle Name:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/middleName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@android:drawable/edit_text"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Username -->
+        <TextView android:text="Username:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@android:drawable/edit_text"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="16dp" />
+
+
+
+        <!-- Birthdate -->
+        <TextView android:text="Birthdate:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/birthdate"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@android:drawable/edit_text"
+            android:hint="MM/DD/YYYY"
+            android:inputType="date"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Email -->
+        <TextView android:text="Email Address:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@android:drawable/edit_text"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Password -->
+        <TextView android:text="Password:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@android:drawable/edit_text"
+            android:inputType="textPassword"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Password Strength -->
+        <TextView
+            android:id="@+id/passwordStrength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text=""
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Password Requirements -->
+        <TextView
+            android:id="@+id/passwordRequirements"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• At least 8 characters\n• One uppercase letter\n• One lowercase letter\n• One number\n• One special character"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+
+        <!-- Confirm Password -->
+        <TextView android:text="Confirm Password:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/confirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@android:drawable/edit_text"
+            android:inputType="textPassword"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#82C9FF"
+            android:text="Login"
+            android:textColor="#fff" />
+
+        <!-- Progress Bar for Loading -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

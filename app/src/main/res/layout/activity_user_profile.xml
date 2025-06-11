@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Modern Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@drawable/profile_header_gradient"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Back Button -->
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/circle_background_white_semi"
+                android:contentDescription="Back"
+                android:padding="6dp"
+                android:src="@drawable/ic_back"
+                android:tint="#6EC6FF" />
+
+            <!-- Profile Content -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!-- Profile Image Container -->
+                <FrameLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginEnd="20dp">
+
+                    <ImageView
+                        android:id="@+id/profileImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/circle_background"
+                        android:backgroundTint="#FFFFFF"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_profile" />
+
+                    <!-- Upload Button -->
+                    <ImageView
+                        android:id="@+id/uploadProfileImageBtn"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="bottom|end"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/circle_background"
+                        android:backgroundTint="#6EC6FF"
+                        android:contentDescription="Change Profile Picture"
+                        android:padding="6dp"
+                        android:src="@android:drawable/ic_menu_camera"
+                        android:tint="@android:color/white" />
+                </FrameLayout>
+
+                <!-- User Information -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/headerUsernameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="Username"
+                        android:textColor="@android:color/white"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/headerLastNameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="Last Name"
+                        android:textColor="#E3F2FD"
+                        android:textSize="16sp" />
+
+                    <!-- Role Badge -->
+                    <TextView
+                        android:id="@+id/headerRoleTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_badge_background"
+                        android:backgroundTint="#FFFFFF"
+                        android:paddingHorizontal="12dp"
+                        android:paddingVertical="4dp"
+                        android:text="Role"
+                        android:textColor="#6EC6FF"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Content Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="24dp">
+
+            <!-- Personal Information Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/card_background"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- Card Header -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="12dp"
+                        android:src="@drawable/ic_profile"
+                        android:tint="#6EC6FF" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Personal Information"
+                        android:textColor="#1A1A1A"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- Information Fields -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- First Name -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="First Name"
+                            android:textColor="#666666"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/firstNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_field_background"
+                            android:padding="12dp"
+                            android:text="First Name"
+                            android:textColor="#1A1A1A"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <!-- Middle Name -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Middle Name"
+                            android:textColor="#666666"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/middleNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_field_background"
+                            android:padding="12dp"
+                            android:text="Middle Name"
+                            android:textColor="#1A1A1A"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <!-- Last Name -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Last Name"
+                            android:textColor="#666666"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lastNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_field_background"
+                            android:padding="12dp"
+                            android:text="Last Name"
+                            android:textColor="#1A1A1A"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <!-- Username -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Username"
+                            android:textColor="#666666"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/usernameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_field_background"
+                            android:padding="12dp"
+                            android:text="Username"
+                            android:textColor="#1A1A1A"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <!-- Email -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Email Address"
+                            android:textColor="#666666"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/emailTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_field_background"
+                            android:padding="12dp"
+                            android:text="Email"
+                            android:textColor="#1A1A1A"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <!-- Birthdate -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Date of Birth"
+                            android:textColor="#666666"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/birthdateTextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_field_background"
+                            android:padding="12dp"
+                            android:text="Birthdate"
+                            android:textColor="#1A1A1A"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Account Information Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_background"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- Card Header -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginEnd="12dp"
+                        android:src="@drawable/ic_admin"
+                        android:tint="#6EC6FF" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Account Information"
+                        android:textColor="#1A1A1A"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- Role Field -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="Account Role"
+                        android:textColor="#666666"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/roleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_field_background"
+                        android:padding="12dp"
+                        android:text="Role"
+                        android:textColor="#1A1A1A"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

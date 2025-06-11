@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "567088674192",
+    "project_id": "ally-user",
+    "storage_bucket": "ally-user.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:567088674192:android:d7f067846f9a474e4aaf15",
+        "android_client_info": {
+          "package_name": "com.example.meritxell"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "567088674192-2aegpfml72c6j8sa9fvsaelmuetmu6od.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.meritxell",
+            "certificate_hash": "ee2461cb168c0689f6e98435eee73b557d78182d"
+          }
+        },
+        {
+          "client_id": "567088674192-60c3hdibvlbsq85433pd35ir7r9rciuv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdY0BdSBz-G8aorQ6LmaSjjj7xypTiI8Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "567088674192-60c3hdibvlbsq85433pd35ir7r9rciuv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

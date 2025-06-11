@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="192dp"
+    android:background="#6EC6FF"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:gravity="bottom">
+
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:src="@drawable/ic_profile"
+        android:contentDescription="Profile Picture"
+        android:scaleType="centerCrop"
+        android:background="@drawable/drawable_profile_upload_circle"
+    android:padding="2dp"  /> <TextView
+    android:id="@+id/usernameTextView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Username"
+    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+    android:textColor="@android:color/white"
+    android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/lastNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Last Name"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/roleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="role"
+        android:textColor="@android:color/white" />
+</LinearLayout>

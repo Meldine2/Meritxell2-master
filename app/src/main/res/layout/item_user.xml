@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:background="@drawable/item_user_background"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp"
+    android:elevation="4dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <!-- User Name Display -->
+<TextView
+android:id="@+id/userDisplayName"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_weight="1"
+android:text="User Name"
+android:textSize="18sp"
+android:textStyle="bold"
+android:textColor="#333333"
+android:layout_marginEnd="16dp"/>
+
+
+    <!-- See Profile Link -->
+<TextView
+android:id="@+id/seeProfileLink"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="See Profile"
+android:textColor="@android:color/holo_blue_light"
+android:textSize="16sp"
+android:clickable="true"
+android:focusable="true"
+android:layout_marginEnd="8dp"/>
+
+    <!-- See Progress Link -->
+<TextView
+android:id="@+id/seeProgressLink"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="See Progress"
+android:textColor="@android:color/holo_blue_light"
+android:textSize="16sp"
+android:clickable="true"
+android:focusable="true"/>
+
+    </LinearLayout>

@@ -1,0 +1,151 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    function isAdmin() {
+      // Ensure the user is authenticated and their 'users' document has role: 'admin'
+      return request.auth != null &&
+             get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    }
+    
+    // Allow authenticated users to read and write their own user data
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+      // Allow any authenticated user to read user data for messaging
+      allow read: if request.auth != null;
+    }
+    
+    // Allow authenticated users to read all users for messaging (inbox)
+    match /users/{document=**} {
+      allow read: if request.auth != null;
+    }
+    
+    // Allow authenticated users to access adoption progress with step uploads
+    match /adoption_progress/{userId} {
+      allow read, write: if request.auth != null && (request.auth.uid == userId || isAdmin());
+
+      // Step uploads subcollections - FIXED PERMISSION RULES
+      match /step2_uploads/{submissionId} {
+        allow read, create, list: if request.auth != null && (request.auth.uid == userId || isAdmin());
+        allow delete: if isAdmin() || (request.auth != null && request.auth.uid == userId);
+      }
+      match /step3_uploads/{submissionId} {
+        allow read, create, list: if request.auth != null && (request.auth.uid == userId || isAdmin());
+        allow delete: if isAdmin() || (request.auth != null && request.auth.uid == userId);
+      }
+      match /step4_uploads/{submissionId} {
+        allow read, create, list: if request.auth != null && (request.auth.uid == userId || isAdmin());
+        allow delete: if isAdmin() || (request.auth != null && request.auth.uid == userId);
+      }
+      match /step5_uploads/{submissionId} {
+        allow read, create, list: if request.auth != null && (request.auth.uid == userId || isAdmin());
+        allow delete: if isAdmin() || (request.auth != null && request.auth.uid == userId);
+      }
+      match /step6_uploads/{submissionId} {
+        allow read, create, list: if request.auth != null && (request.auth.uid == userId || isAdmin());
+        allow delete: if isAdmin() || (request.auth != null && request.auth.uid == userId);
+      }
+      match /step7_uploads/{submissionId} {
+        allow read, create, list: if request.auth != null && (request.auth.uid == userId || isAdmin());
+        allow delete: if isAdmin() || (request.auth != null && request.auth.uid == userId);
+      }
+      match /step8_uploads/{submissionId} {
+        allow read, create, list: if request.auth != null && (request.auth.uid == userId || isAdmin());
+        allow delete: if isAdmin() || (request.auth != null && request.auth.uid == userId);
+      }
+      match /step9_uploads/{submissionId} {
+        allow read, create, list: if request.auth != null && (request.auth.uid == userId || isAdmin());
+        allow delete: if isAdmin() || (request.auth != null && request.auth.uid == userId);
+      }
+      match /step10_uploads/{submissionId} {
+        allow read, create, list: if request.auth != null && (request.auth.uid == userId || isAdmin());
+        allow delete: if isAdmin() || (request.auth != null && request.auth.uid == userId);
+      }
+
+      match /comments/{stepName} {
+        allow read: if request.auth != null;
+        allow write: if isAdmin();
+      }
+    }
+    
+    // Allow authenticated users to access user submissions
+    match /user_submissions_status/{userId}/{document=**} {
+      allow read, write: if request.auth != null && 
+        (request.auth.uid == userId || isAdmin());
+    }
+    
+    // Allow authenticated users to access useradopt collection
+    match /useradopt/{userId} {
+      allow read, write: if request.auth != null && 
+        (request.auth.uid == userId || isAdmin());
+    }
+    
+    // Allow authenticated users to manage donations
+    match /ToysDonation/{document=**} {
+      allow read, write: if request.auth != null;
+    }
+    match /ClothesDonation/{document=**} {
+      allow read, write: if request.auth != null;
+    }
+    match /FoodDonation/{document=**} {
+      allow read, write: if request.auth != null;
+    }
+    match /EducationDonation/{document=**} {
+      allow read, write: if request.auth != null;
+    }
+    match /MoneyDonation/{document=**} {
+      allow read, write: if request.auth != null;
+    }
+    
+    // Allow main donations collection (includes money donations)
+    match /donations/{document=**} {
+      allow read, write: if request.auth != null;
+    }
+    
+    // Allow donation evidence collection
+    match /donation_evidence/{document=**} {
+      allow read, write: if request.auth != null;
+    }
+    
+    // Allow authenticated users to access appointments
+    match /appointments/{document=**} {
+      allow read, write: if request.auth != null;
+    }
+    
+    // Allow authenticated users to access their user history (general)
+    match /user_history/{userId}/{document=**} {
+      allow read, write: if request.auth != null && 
+        (request.auth.uid == userId || isAdmin());
+    }
+    
+    // Allow notification logs (for debugging)
+    match /notification_logs/{document=**} {
+      allow read, write: if request.auth != null;
+    }
+    
+    // Allow children collection access
+    match /children/{document=**} {
+      allow read, write: if request.auth != null;
+    }
+    
+    // Allow matching related collections
+    match /matching/{document=**} {
+      allow read, write: if request.auth != null;
+    }
+    
+    // Allow matching preferences collection
+    match /matching_preferences/{document=**} {
+      allow read, write: if request.auth != null;
+    }
+    
+    // Allow admin notifications collection
+    match /admin_notifications/{document=**} {
+      allow read, write: if request.auth != null;
+    }
+    
+    // Allow any other authenticated access for missing collections
+    match /{document=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+} 
